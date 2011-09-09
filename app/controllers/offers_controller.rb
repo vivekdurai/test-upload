@@ -25,6 +25,9 @@ class OffersController < ApplicationController
   # GET /offers/new.xml
   def new
     @offer = Offer.new
+    1.times do
+      @offer.build_image
+    end
 
     respond_to do |format|
       format.html # new.html.erb

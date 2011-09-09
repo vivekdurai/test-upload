@@ -3,5 +3,5 @@ class Offer
 
   field :name, :type => String
   has_one :image
-  #accepts_nested_attributes_for :image
+  accepts_nested_attributes_for :image , :autosave => true
 end
